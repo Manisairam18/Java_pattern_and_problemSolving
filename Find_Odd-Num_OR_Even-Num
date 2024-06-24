@@ -1,1 +1,18 @@
-
+import java.util.Scanner;
+public class HelloWorld {
+    public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter any number: ");
+if(sc.hasNextInt()){
+int n = sc.nextInt();
+if(n%2==0){
+    System.out.println(n +" yes,I'ts Even number...");
+} else {
+    System.out.println(n+" Yes,I'ts Odd number");
+}
+}
+else{
+    System.out.println("You are enterd a wrong number.");
+}
+    }
+}
