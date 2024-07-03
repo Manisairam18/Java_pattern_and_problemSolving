@@ -12,9 +12,9 @@ public class FindArmstrong {
         num=num/10;
     }
     if(original==num2){
-        System.out.println("It's a palindrome.");
+        System.out.println("It's armstrong Number.");
     }else{
-        System.out.println("I'ts not a palindrome.");
+        System.out.println("I'ts not a armstrong number.");
 
     }
             }
