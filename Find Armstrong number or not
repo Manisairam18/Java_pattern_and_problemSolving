@@ -1,1 +1,21 @@
+import java.util.Scanner;
+public class FindArmstrong {
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int num = sc.nextInt();
+    int original=num;
+    int num1;
+    int num2=0;
+    while(num >0){
+        num1=num%10;
+        num2=num2+(num1*num1*num1);
+        num=num/10;
+    }
+    if(original==num2){
+        System.out.println("It's a palindrome.");
+    }else{
+        System.out.println("I'ts not a palindrome.");
 
+    }
+            }
+}
