@@ -12,12 +12,12 @@ public class primenum {
     }
     public static void main(String[] args) {
      Scanner sc = new Scanner(System.in);
-     System.out.println("Enter any value for check prime or not: ");
+     System.out.println("Enter any value to check primenumber or not: ");
      int n = sc.nextInt();
      if(prime(n)){
-         System.out.println(n+" Its a prime.");
+         System.out.println(n+" It's a primenumber.");
      }else{
-         System.out.println(n+" Its not a prime");
+         System.out.println(n+" It's not a primenumber");
      }
      
     }
