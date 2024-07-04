@@ -1,1 +1,30 @@
+import java.util.Scanner;
 
+public class Grades {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the number of students: ");
+		int n = sc.nextInt();
+		int[] grade = new int[n];
+
+		System.out.println("Enter each student's grade:");
+		for (int i = 0; i < n; i++) {
+			grade[i] = sc.nextInt();
+		}
+		for (int i = 0; i < n; i++) {
+			int gradee = grade[i];
+
+			if (gradee >= 38) {
+				int multiplefive = ((gradee / 5) + 1) * 5;
+
+				if (multiplefive - gradee < 3) {
+					gradee = multiplefive;
+				}
+			}
+			System.out.println(gradee);
+		}
+
+	}
+
+}
